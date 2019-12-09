@@ -1,0 +1,3 @@
+post得到的页面和页面URL不符，原因是重定向。页面上，输入用户名密码之后跳转到https://www.zdaye.com/Users/index_15757120656.html， 而抓到的包里，post请求得到的网址却是https://www.zdaye.com/Users/Login.html。估计是进行了两次跳转。
+因此，response.text是nonetype。
+用selenium可以拿到数据。但这里的port是GIF，并且其URL带有时间。试图以当前时间构造URL，并用selenium获取GIF（也尝试了jpg），但失败了。

@@ -1,0 +1,29 @@
+#db中数据：
+MAX_SCORE = 100
+MIN_SCORE = 0
+INIT_SCORE = 10
+
+REDIS_HOST = 'localhost' 
+REDIS_PORT = '6379'
+REDIS_PASSWORD = None
+REDIS_KEY = 'proxies'
+
+#getter中数据：
+POOL_UPPER_THRESHOLD = 10000
+
+#tester中数据：
+VALID_STATUS_CODES = [200, 302]
+TEST_URL = 'https://new.qq.com'
+BATCH_TEST_SIZE = 30
+
+#scheduler中的数据：
+TESTER_CYCLE = 20
+GETTER_CYCLE = 20
+
+TESTER_ENABLED = False
+GETTER_ENABLED = False
+API_ENABLED = True
+DELETE_ALL = False
+
+API_HOST = '0.0.0.0'
+API_PORT = 5555
